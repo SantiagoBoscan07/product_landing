@@ -1,0 +1,138 @@
+<html>
+<head>
+<style>
+    body{
+        background-color:rgb(228, 237, 247)
+    }
+    div.describe{
+        font-family:Arial, Helvetica, sans-serif !important;
+        font-size:18px;
+    }
+    div.follow{
+        font-family:Arial, Helvetica, sans-serif !important;
+        font-size:20px;
+    }
+    #header-img{
+        width:150px;
+        padding-right:250px;
+        display:inline-block;
+    }
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.flex-container{
+    display:flex;
+    justify-content:center;
+}
+.nav-link{
+    padding-right:95px;
+    margin:5px;
+}
+section{
+    padding-bottom: 40px;
+}
+#product{
+    display:block;
+    height:auto;
+    max-width:100%;
+    margin:auto;
+}
+#news{
+    display:block;
+    height:100px;
+    max-width:100%;
+    margin:auto;
+}
+header{
+    position:fixed;
+    top:0;
+    min-height:60px;
+    display:flex;
+    align-items:center;
+    width:100%;
+    background-color:rgb(209, 222, 237);
+    @media (max-width: 600px){
+        flex-wrap:wrap;
+    }
+}
+.title{
+    padding-top: 70px;
+    display:inline-block;
+    font-family:Arial, Helvetica, sans-serif !important;
+
+}
+.flex-container > div{
+    background-color:rgb(209, 222, 237);
+    width:100px;
+    margin:25px;
+    text-align:center;
+    line-height:75px;
+    font-size:18px;
+}
+</style>
+</head>
+<body>
+    <header id="header">
+            <img id="header-img" src="https://logos-download.com/wp-content/uploads/2016/05/Barilla_logo_red.png" alt="Barilla Logo">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#request_information">Learn About Our Products</a>
+                <a class="nav-link" href="#contact_us">Get News About Our Products</a>
+                <a class="nav-link" href="#follow_our_social_media_pages">Follow Our Social Media Pages</a>
+            </nav>
+        </header>
+            <center><h1 class="title">Barilla's Linguini Fine From The Masters of Pasta</h1></center>
+            <div class="describe">
+            <section id="request_information">
+            <center><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/W7rOLRlqhuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <p><center>In Barilla we offer products that satisfy the need of a strict chef.</center></p>
+            <img id="product" src="https://www.barilla.com//-/media/images/ca/products/groups/ranges/classic-blue-box/linguinefini_long_309x87.png?la=en-CA">
+            <center>
+                <p>Made with 100% durum wheat and purified water.</p>
+                <p>Elegant and delicious pasta for all occasions.</p>
+                <p>Suitable for vegan or vegetarian diet.</p>
+            </center>
+            </section>
+            
+            <section id="contact_us">
+            <p><center><italic>If you are interested in Barilla's products, type your email below to get news about our lastest products.</italic></center></p>
+            <center><form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" type="email" placeholder="Type your email address" name="email" required></input>
+                <input id="submit" type="submit"></input>
+            </form>
+            <img id="news" src="https://lh3.googleusercontent.com/proxy/O3RphjzaufDef3OBwPO2_T2Wb8IbuA2C4bHgDTC5oqT8munEEVu2BV4gw0Or1VfCkUWYQ8bpMtKiGCSCA6iVvbaeyFq4Z9CyJfgfYPkSrR0h6LWHqKjs3i6QRDpiwx5cewfu9a1x_Nc">
+        </section></center>
+        </div>
+            <section id="follow_our_social_media_pages">
+                <div class="follow">
+                <p><center>Follow Us In Our Social Media Pages!</center></p></div>
+                <div class="flex-container">
+                    <div><a href="#">Facebook</a></div>
+                    <div><a href="#">Twitter</a></div>
+                    <div><a href="#">Instagram</a></div>
+                </div>
+            </section>
+    
+        
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    
+</body>
+
+</html>
